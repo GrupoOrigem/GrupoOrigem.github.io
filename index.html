@@ -56,6 +56,9 @@
         .letraMenor{
             font-size: 1.1em;
         }
+        .letraMaior{
+            font-size:1.2em
+        }
         .rodar{
             border-radius: 50%;
             -webkit-animation:spin 5s ;
@@ -89,7 +92,7 @@
         let a = document.getElementById('origem');
         let b = document.createElement('h1')
         b.id='seila'
-        b.innerHTML='SOMO A ORIGEM, VIEMOS PARA CAUSAR<br> A DESTRUIÇÃO DOS OUTROS GRUPOS'
+        b.innerHTML='SOMOS A ORIGEM, VIEMOS PARA CAUSAR<br> A DESTRUIÇÃO DOS OUTROS GRUPOS'
         a.appendChild(b)
         let d=document.getElementById('botao')
         d.innerText='Membros'
@@ -108,7 +111,9 @@
             }
             else if(c==1){
                 d.innerText=''
-                b.innerHTML='SOMO A ORIGEM, VIEMOS PARA CAUSAR<br> A DESTRUIÇÃO DOS OUTROS GRUPOS'
+                b.innerHTML='SOMOS A ORIGEM, VIEMOS PARA CAUSAR<br> A DESTRUIÇÃO DOS OUTROS GRUPOS'
+                 b.className=' '
+                 b.className='letraMaior'
                 a.appendChild(b)
                 d.innerText='Membros'
                 c=0
