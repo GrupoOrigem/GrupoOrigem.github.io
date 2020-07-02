@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <body onload="rodar()" style="background-color: black">
+
+        <p class="logo">           
+            <img src="logo.png" id='roda1' class='' alt="A origem"  width="400" height="400" >
+        </p>
+        <div>        
+            <div style="color: white" id="origem"></div>
+            <button class="button" id="botao"  onclick="muda()"></button>
+        </div>
+        <p class="twitter">
+            <a  href="https://twitter.com/grupo_0">
+                <img class="arredondaFoto" src="Twitter.png" alt="Siga" width="100" height="100">
+            </a>
+        </p>
+    </body>
+    <style type="text/css">
+        .logo {
+            text-align: center;
+        }
+        .button{
+            background-color:black;
+            color: white ;
+            border-radius: 10%;
+            width: 100px;
+            height: 50px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            font-family: Courier New;
+            font-weight: bold;
+            font-size: 1.1em;
+            
+        }
+
+        .twitter {
+            text-align: center;
+            
+            
+        }
+
+        #origem {
+            text-align: center;
+            font-family: Courier New;
+        }
+        .arredondaFoto{
+            border-radius: 50%;
+        }
+        .image {
+            width: 400px;
+            height: 400px; 
+            
+        }
+        .letraMenor{
+            font-size: 1.1em;
+        }
+        .rodar{
+            border-radius: 50%;
+            -webkit-animation:spin 5s ;
+            -moz-animation:spin 5s ;
+            animation:spin 5s ;
+        }
+        .image:hover{
+            -webkit-animation:spin 4s linear infinite;
+            -moz-animation:spin 4s linear infinite;
+            animation:spin 4s  linear infinite;
+        }
+        @-moz-keyframes spin {
+            from { -moz-transform: rotate(0deg); }
+            to { -moz-transform: rotate(360deg); }
+        }
+        @-webkit-keyframes spin {
+            from { -webkit-transform: rotate(0deg); }
+            to { -webkit-transform: rotate(360deg); }
+        }
+        @keyframes spin {
+            from {
+                transform:rotate(0deg);
+            }
+            to {
+                transform:rotate(360deg);
+            }
+        }
+    </style>
+    <script>
+        let c = 0;
+        let a = document.getElementById('origem');
+        let b = document.createElement('h1')
+        b.id='seila'
+        b.innerHTML='SOMO A ORIGEM, VIEMOS PARA CAUSAR<br> A DESTRUIÇÃO DOS OUTROS GRUPOS'
+        a.appendChild(b)
+        let d=document.getElementById('botao')
+        d.innerText='Membros'
+        
+        function muda() {
+            if (document.getElementById('seila')) {
+                document.getElementById('seila').remove()
+            }
+            if (c==0) {
+                d.innerText=''
+                b.innerHTML='Nome dos membros: <br>Adrian O Macaco-Zeppeli-Villefortz-Maschio-puspeniano🤡🔪🔪-Geisler-Guiba piru de navalha-Kai-RedKap-oliveira👺-Cravin-Juan-N3X-kroos-Xandon-Tatu-Lihandreff silva Arcan02-thiaguin da CV-ryanzin del zap-Lucas-RafaelM-Tonin do CV-Pinheiro-zepphyr-Marcelin-Russo cria de Sepetiba-AlejandroZ-kaio-cyzelol-Guizin mono vayne-viniloko_br-Caiubi-Pedro Farofa Yokxz-Tosta o Brabo-depressive mummy-Kawê-Kassab-JHcria-Vitin-Alifilho<br>Nome dos cara que fizeram essa merda:<br>All3sHe4rt-shankerss<br>Nome dos vermes(vulgo Adms):<br>Victor Rodolfo-Jorge-Rapha-Pantene-Guilherme paulhaso'
+                b.className='letraMenor'
+                a.appendChild(b)
+                d.innerText='Origem'
+                c++
+            }
+            else if(c==1){
+                d.innerText=''
+                b.innerHTML='SOMO A ORIGEM, VIEMOS PARA CAUSAR<br> A DESTRUIÇÃO DOS OUTROS GRUPOS'
+                a.appendChild(b)
+                d.innerText='Membros'
+                c=0
+            }
+            
+            
+        }
+        function rodar() {
+           let a =document.getElementById("roda1");
+           a.className =''+'rodar'+' '+'image'
+           
+        }
+    </script>
+</html>
